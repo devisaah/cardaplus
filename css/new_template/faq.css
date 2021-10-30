@@ -1,0 +1,95 @@
+.accordion {
+    margin-bottom: 3rem !important;
+}
+
+.accordion .content p {
+    width: 100% !important;
+}
+
+#faq {
+    margin-bottom: 3rem !important;
+}
+
+.accordion a {
+  position: relative !important;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+  -webkit-flex-direction: column !important;
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  padding: 1rem 3rem 1rem 1rem !important;
+  color: #7288a2 !important;
+  font-size: 1.15rem !important;
+  font-weight: 400 !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+.accordion .accordion-item .content {
+  text-align: justify !important;
+  background: none;  
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer !important;
+  color: #ad0303 !important;
+}
+.accordion a:hover::after {
+  border: 1px solid #ad0303 !important;
+}
+.accordion a.active {
+  color: #ad0303 !important;
+  border-bottom: 1px solid #ad0303 !important;
+}
+.accordion a::after {
+  font-family: 'LineIcons' !important;
+  content: '\e9d6' !important;
+  position: absolute !important;
+  float: right !important;
+  right: 1rem !important;
+  font-size: 1rem !important;
+  color: #7288a2 !important;
+  padding-left: 0.4rem;
+  padding-top: 0.1rem;
+  width: 30px !important;
+  height: 30px !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+  border: 1px solid #7288a2 !important;
+}
+.accordion a.active::after {
+  font-family: 'LineIcons' !important;
+  content: "\e9bc" !important;
+  color: #ad0303 !important;
+  border: 1px solid #ad0303 !important;
+  text-align: center !important;
+  padding: 1px !important;
+}
+.accordion .content {
+  opacity: 0 !important;
+  padding: 0 1rem !important;
+  max-height: 0 !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+  overflow: hidden !important;
+  clear: both !important;
+  -webkit-transition: all 0.2s ease 0.15s !important;
+  -o-transition: all 0.2s ease 0.15s !important;
+  transition: all 0.2s ease 0.15s !important;
+}
+.accordion .content p {
+  font-size: 1rem !important;
+  font-weight: 300 !important;
+}
+.accordion .content.active {
+  opacity: 1 !important;
+  padding: 1rem !important;
+  max-height: 100% !important;
+  -webkit-transition: all 0.35s ease 0.15s !important;
+  -o-transition: all 0.35s ease 0.15s !important;
+  transition: all 0.35s ease 0.15s !important;
+}
